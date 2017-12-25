@@ -1,0 +1,74 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  organizations: "Organizations"
+  name: "Name"
+  name_placeholder: "mi-organization"
+  description: "Description"
+  description_placeholder: "this is a little description of the organization"
+  books: "Books"
+  books_placeholder: "organization/content"
+  logo_url: "Logo URL"
+  logo_url_placeholder: "https://mumuki.io/logo-alt-large.png"
+  contact_email: "Contact email"
+  contact_email_placeholder: "jane.doe@gmail.com"
+  theme_stylesheet: "Theme stylesheet"
+  theme_stylesheet_placeholder: ".my-class { display: none }"
+  login_methods: "Login methods"
+  organization_saved_successfully: "Organization saved successfully"
+  add_book: 'Add book'
+  extension_javascript: "Javascript extension"
+  extension_javascript_placeholder: "function foo() {}"
+  public: "Public"
+  submit: "Submit"
+  visibility: "Visibility"
+  locale: "Locale"
+  new_organization: "New organization"
+  users: "Users"
+  first_name: "First name"
+  first_name_placeholder: "Jane"
+  last_name: "Last name"
+  last_name_placeholder: "Doe"
+  email: "Email"
+  email_placeholder: "jane.doe@gmail.com"
+  image_url: "Avatar URL"
+  image_url_placeholder: "https://mumuki.io/logo-alt.png"
+  raise_hand_enabled: "Raise hands enabled"
+  permissions: "Permissions"
+  add_permission: "Add permission"
+  student: "Student"
+  teacher: "Teacher"
+  headmaster: "Headmaster"
+  janitor: "Janitor"
+  writer: "Writer"
+  editor: "Editor"
+  owner: "Owner"
+  organization: "Organization"
+  content: "Content"
+  course: "Course"
+  community_link: "Community Link"
+  community_link_placeholder: "https://facebook.com/groups/1"
+  user_saved_successfully: "User saved successfully"
+  new_user: "New users"
+  search: "Search"
+  sign_in: "Log In"
+  sign_out: "Sign Out"
