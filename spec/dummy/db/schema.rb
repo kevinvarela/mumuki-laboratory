@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20180130194923) do
     t.string "queries", default: [], array: true
     t.text "query_results"
     t.text "manual_evaluation_comment"
+    t.string "content_metadata"
     t.index ["exercise_id"], name: "index_assignments_on_exercise_id"
     t.index ["submission_id"], name: "index_assignments_on_submission_id"
     t.index ["submitter_id"], name: "index_assignments_on_submitter_id"
@@ -113,6 +114,8 @@ ActiveRecord::Schema.define(version: 20180130194923) do
     t.integer "editor", default: 0, null: false
     t.string "choices", default: [], null: false, array: true
     t.text "goal"
+    t.string "initial_state"
+    t.string "final_state"
     t.index ["guide_id"], name: "index_exercises_on_guide_id"
     t.index ["language_id"], name: "index_exercises_on_language_id"
   end
