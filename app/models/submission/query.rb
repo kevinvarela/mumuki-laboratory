@@ -1,5 +1,5 @@
 class Query < Submission
-  attr_accessor :query, :cookie, :content
+  attr_accessor :query, :cookie, :content, :content_metadata
 
   def try_evaluate_exercise!(assignment)
     r = assignment.run_query!(content: content, query: query, cookie: cookie)
