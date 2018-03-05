@@ -17,7 +17,7 @@ describe '#as_platform_json' do
       before { reindex_current_organization! }
 
       let(:assignment) { create(:assignment,
-                                solution: 'x = 2',
+                                submittable_solution: 'x = 2',
                                 status: :passed,
                                 submissions_count: 2,
                                 submitter: user,
@@ -78,7 +78,7 @@ describe '#as_platform_json' do
       let(:exercise) { guide.exercises.first }
       before { reindex_current_organization! }
       let(:assignment) { create(:assignment,
-                                solution: 'x = 2',
+                                submittable_solution: 'x = 2',
                                 status: :passed,
                                 submissions_count: 2,
                                 submitter: user,
@@ -132,7 +132,7 @@ describe '#as_platform_json' do
       let(:exercise) { guide.exercises.first }
       before { reindex_current_organization! }
       let(:assignment) { create(:assignment,
-                                solution: 'x = 2',
+                                submittable_solution: 'x = 2',
                                 status: :passed,
                                 submissions_count: 2,
                                 submitter: user,

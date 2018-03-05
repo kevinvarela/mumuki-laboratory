@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180130194923) do
+ActiveRecord::Schema.define(version: 20180305152357) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "assignments", id: :serial, force: :cascade do |t|
-    t.text "solution"
+    t.text "submittable_solution"
     t.integer "exercise_id"
     t.integer "status", default: 0
     t.text "result"
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20180130194923) do
     t.string "queries", default: [], array: true
     t.text "query_results"
     t.text "manual_evaluation_comment"
-    t.string "content_metadata"
+    t.string "user_solution"
     t.index ["exercise_id"], name: "index_assignments_on_exercise_id"
     t.index ["submission_id"], name: "index_assignments_on_submission_id"
     t.index ["submitter_id"], name: "index_assignments_on_submitter_id"
