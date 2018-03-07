@@ -35,6 +35,7 @@ describe '#as_platform_json' do
                            feedback: nil,
                            test_results: nil,
                            submissions_count: 2,
+                           failed_submissions_count: 0,
                            manual_evaluation_comment: nil,
                            exercise: {
                              eid: exercise.bibliotheca_id,
@@ -93,6 +94,7 @@ describe '#as_platform_json' do
                            feedback: nil,
                            test_results: nil,
                            submissions_count: 2,
+                           failed_submissions_count: 0,
                            manual_evaluation_comment: nil,
                            exercise: {
                              name: exercise.name,
@@ -147,6 +149,7 @@ describe '#as_platform_json' do
                            feedback: nil,
                            test_results: nil,
                            submissions_count: 2,
+                           failed_submissions_count: 0,
                            manual_evaluation_comment: nil,
                            exercise: {
                              eid: exercise.bibliotheca_id,
